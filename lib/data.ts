@@ -24,6 +24,9 @@ export const getContacs = async (search: string, currentPage: number) => {
           },
         ],
       },
+      orderBy: {
+        createdAt: "desc",
+      },
     });
     return contacts;
   } catch (error) {
