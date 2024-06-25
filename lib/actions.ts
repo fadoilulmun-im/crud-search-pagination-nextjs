@@ -33,8 +33,8 @@ export const saveContact = async (prevState: any, formData: FormData) => {
     };
   }
 
-  revalidatePath("/contacts");
-  redirect("/contacts");
+  revalidatePath("/");
+  redirect("/");
 };
 
 export const updateContact = async (
@@ -65,8 +65,8 @@ export const updateContact = async (
     };
   }
 
-  revalidatePath("/contacts");
-  redirect("/contacts");
+  revalidatePath("/");
+  redirect("/");
 };
 
 export const deleteContact = async (
@@ -82,5 +82,5 @@ export const deleteContact = async (
     };
   }
 
-  revalidatePath("/contacts");
+  revalidatePath("/");
 };
